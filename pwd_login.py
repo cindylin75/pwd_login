@@ -1,7 +1,10 @@
-pwd = input('please insert your password:')
-pwd = 'a123456'
-while true
-if pwd = 'a123456':
-	print('log in success!')
-    break
-else print('the password is worng, you have 2 chance')
+password = 'a123456'
+i = 3 
+while True:
+    pwd = input('please insert your password:')
+    if pwd == password:
+	    print('log in success!')
+        break # leave the loop
+else:
+	i = i - 1
+	print('the password is worng, you have', i ,' chance')
